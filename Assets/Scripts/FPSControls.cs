@@ -14,6 +14,7 @@ public class FPSControls : Singleton<FPSControls> {
   [Header("Initialization")]
   public Transform verticalPivot;
   public Transform horizontalPivot;
+  public SmoothVolume steps;
 
   void OnEnable () {
     SetCursorLock(true);
@@ -26,8 +27,11 @@ public class FPSControls : Singleton<FPSControls> {
                             xRotationRange.x, xRotationRange.y);
     horizontalPivot.transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
 
-    transform.position += (Input.GetAxis("Horizontal") * verticalPivot.transform.right +
-         Input.GetAxis("Vertical") * verticalPivot.transform.forward) * speed * Time.deltaTime;
+    Vector3 motionDirection = (Input.GetAxis("Horizontal") * verticalPivot.transform.right +
+                               Input.GetAxis("Vertical") * verticalPivot.transform.forward);
+    transform.position += motionDirection * speed * Time.deltaTime;
+
+    steps.targetVolume = motionDirection.magnitude < 0.1f? 0: 1;
   }
 
   public void SetCursorLock (bool value) {

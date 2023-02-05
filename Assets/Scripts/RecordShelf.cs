@@ -11,6 +11,7 @@ public class RecordShelf : MonoBehaviour, IAmInteractive {
 
   void Update () {
     if (Input.GetMouseButtonDown(0) && IsInteractive && FPSControls.Instance.enabled &&
+        Crosshair.Instance.selected &&
         Crosshair.Instance.selected.GetComponentInParent<RecordShelf>() == this) {
       formularioBusqueda.SetActive(true);
       FPSControls.Instance.enabled = false;

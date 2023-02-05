@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class Acquire : MonoBehaviour, IAmInteractive {
   [Header("Configuration")]
+  public bool unnacquirable = false;
   public Animator needsToBeGrabbable;
   [TextArea]
   public string errorMessage;
@@ -18,8 +19,9 @@ public class Acquire : MonoBehaviour, IAmInteractive {
   public InventorySlot slot;
 
   void Update () {
-    if (Input.GetMouseButtonDown(0) && Crosshair.Instance.selected.GetComponentInParent<Acquire>() == this) {
-      if (Inventory.Instance.CurrentlyHeld == needsToBeGrabbable) {
+    if (Input.GetMouseButtonDown(0) && Crosshair.Instance.selected &&
+        Crosshair.Instance.selected.GetComponentInParent<Acquire>() == this) {
+      if (!unnacquirable && Inventory.Instance.CurrentlyHeld == needsToBeGrabbable) {
         AcquireSelf();
       } else {
         PepeGrillo.Say(errorMessage);

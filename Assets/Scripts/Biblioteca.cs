@@ -29,7 +29,7 @@ public class Biblioteca : MonoBehaviour, IAmInteractive {
 
   public void OpenTheBook () {
     Ficha ficha = Inventory.Instance.CurrentlyHeld.GetComponent<Ficha>();
-    string bookTitle = ficha.codeField.text == "CEPO"? "El Motivo de mis Desvelos":
+    string bookTitle = ficha.codeField.text == "CEPO"? "Registro Conscriptos Servicio Militar\n1972-1973":
       booksList[Random.Range(0, booksList.Length)].Trim();
     theBook.Open(bookTitle, ficha.nameField.text, ficha.codeField.text == "CEPO");
   }
