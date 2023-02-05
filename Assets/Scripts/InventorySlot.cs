@@ -5,7 +5,10 @@ using System.Collections.Generic;
 public class InventorySlot : MonoBehaviour {
   [Header("Configuration")]
   public bool available = true;
+
+  // [Header("Information")]
   public bool Visible { get => Inventory.Instance.isVisible; }
+  public bool IsAcquired { get => !available; set => available = !value; }
 
   [Header("Initialization")]
   public Animator open;

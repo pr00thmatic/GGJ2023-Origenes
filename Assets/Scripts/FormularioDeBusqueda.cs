@@ -11,6 +11,7 @@ public class FormularioDeBusqueda : MonoBehaviour {
 
   void OnEnable () { StartCoroutine(_OnEnable()); }
   IEnumerator _OnEnable () {
+    Crosshair.Instance.gameObject.SetActive(false);
     fadeInOut.SetTrigger("show up");
     Inventory.Instance.enabled = false;
     yield return null;
@@ -22,6 +23,7 @@ public class FormularioDeBusqueda : MonoBehaviour {
     fadeInOut.SetTrigger("gtfo");
     yield return new WaitForSeconds(1);
     ficha.Search(input.text);
+    Crosshair.Instance.gameObject.SetActive(true);
     gameObject.SetActive(false);
   }
 }
