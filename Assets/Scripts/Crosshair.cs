@@ -18,8 +18,9 @@ public class Crosshair : Singleton<Crosshair> {
 
     if (Physics.Raycast(ray, out hit, distanceToInteract)) {
       selected = hit.collider.gameObject;
+    } else {
+      selected = null;
     }
-
     animator.SetBool("is over interactive", selected &&
                      selected.GetComponentInParent<IAmInteractive>() != null &&
                      selected.GetComponentInParent<IAmInteractive>().IsInteractive);

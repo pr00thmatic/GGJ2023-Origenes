@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class RecordShelf : MonoBehaviour, IAmInteractive {
   // [Header("Information")]
-  public bool IsInteractive { get => !Inventory.Has(Inventory.FICHA_INDEX); }
+  public bool IsInteractive { get => !Inventory.Has(Inventory.FICHA_INDEX) && !Biblioteca.blockShelf; }
 
   [Header("Initialization")]
   public GameObject formularioBusqueda;

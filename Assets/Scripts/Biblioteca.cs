@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class Biblioteca : MonoBehaviour, IAmInteractive {
+  public static bool blockShelf = false;
+
   [Header("Information")]
   public string[] booksList;
   public bool IsInteractive { get =>
@@ -19,7 +21,9 @@ public class Biblioteca : MonoBehaviour, IAmInteractive {
   }
 
   void Update () {
-    if (IsInteractive && Input.GetMouseButtonDown(0)) {
+    if (IsInteractive && Input.GetMouseButtonDown(0) &&
+        Crosshair.Instance.selected &&
+        Crosshair.Instance.selected.GetComponentInParent<Biblioteca>() == this) {
       OpenTheBook();
       Inventory.Instance.Unhold();
       Inventory.Instance.Remove(Inventory.FICHA_INDEX);
@@ -32,5 +36,6 @@ public class Biblioteca : MonoBehaviour, IAmInteractive {
     string bookTitle = ficha.codeField.text == "CEPO"? "Registro Conscriptos Servicio Militar\n1972-1973":
       booksList[Random.Range(0, booksList.Length)].Trim();
     theBook.Open(bookTitle, ficha.nameField.text, ficha.codeField.text == "CEPO");
+    blockShelf = blockShelf || ficha.codeField.text == "CEPO";
   }
 }

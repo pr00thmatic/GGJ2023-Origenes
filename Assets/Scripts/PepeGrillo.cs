@@ -12,7 +12,7 @@ public class PepeGrillo : Singleton<PepeGrillo> {
     Instance.StartCoroutine(Instance._Speak(message)); } IEnumerator _Speak (string message) {
 
     Instance.pepeGrillo.text = message;
-    yield return new WaitForSeconds(message.Split("\n").Length * 2);
+    yield return new WaitForSeconds(message.Split(" ").Length * 0.3f);
     Instance.pepeGrillo.text = "";
   }
 }
