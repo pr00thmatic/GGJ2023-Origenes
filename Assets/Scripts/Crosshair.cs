@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class Crosshair : Singleton<Crosshair> {
+  [Header("Configuration")]
+  public float distanceToInteract = 3;
+
   [Header("Information")]
   public GameObject selected;
 
@@ -13,7 +16,7 @@ public class Crosshair : Singleton<Crosshair> {
     RaycastHit hit;
     Ray ray = Camera.main.ScreenPointToRay(new Vector2(Screen.width/2f, Screen.height/2f));
 
-    if (Physics.Raycast(ray, out hit)) {
+    if (Physics.Raycast(ray, out hit, distanceToInteract)) {
       selected = hit.collider.gameObject;
     }
 

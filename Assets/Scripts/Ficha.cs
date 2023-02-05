@@ -23,9 +23,6 @@ public class Ficha : MonoBehaviour {
     anxientNamesList = hailSatan.ToString().Split("\n");
   }
 
-  void OnEnable () {
-  }
-
   public bool Search (string code) {
     FPSControls.Instance.enabled = true;
 

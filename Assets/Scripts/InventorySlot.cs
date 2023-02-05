@@ -15,11 +15,11 @@ public class InventorySlot : MonoBehaviour {
   public Animator closed;
 
   void Update () {
-    open.gameObject.SetActive(available);
-    closed.gameObject.SetActive(!available);
+    if (open.enabled) open.gameObject.SetActive(available);
+    if (closed.enabled) closed.gameObject.SetActive(!available);
 
-    open.SetBool("visible", Visible);
-    closed.SetBool("visible", Visible);
+    if (open.enabled) open.SetBool("visible", Visible);
+    if (closed.enabled) closed.SetBool("visible", Visible);
   }
 
   public void HoldTheItem () {

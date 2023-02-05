@@ -28,7 +28,9 @@ public class Biblioteca : MonoBehaviour, IAmInteractive {
   }
 
   public void OpenTheBook () {
-    theBook.Open(booksList[Random.Range(0, booksList.Length)].Trim(),
-                 Inventory.Instance.CurrentlyHeld.GetComponent<Ficha>().nameField.text);
+    Ficha ficha = Inventory.Instance.CurrentlyHeld.GetComponent<Ficha>();
+    string bookTitle = ficha.codeField.text == "CEPO"? "El Motivo de mis Desvelos":
+      booksList[Random.Range(0, booksList.Length)].Trim();
+    theBook.Open(bookTitle, ficha.nameField.text, ficha.codeField.text == "CEPO");
   }
 }

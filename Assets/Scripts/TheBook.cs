@@ -4,17 +4,27 @@ using System.Collections.Generic;
 using TMPro;
 
 public class TheBook : MonoBehaviour {
+  [Header("Configuration")]
+  public float readingTime = 3;
+  public float waitBeforePouring = 2;
+
   [Header("Initialization")]
   public TextMeshPro title;
   public TextMeshPro author;
+  public GameObject frikingBook;
+  public GameObject normalBook;
 
-  public void Open (string title, string author) {
+  public void Open (string title, string author, bool frikingOpenIt = false) {
     gameObject.SetActive(true);
     this.title.text = title;
-    StartCoroutine(_Open());
+    this.author.text = author;
+    if (frikingOpenIt) {
+      frikingBook.SetActive(true);
+    }
   }
 
-  IEnumerator _Open () {
-    yield return new WaitForSeconds(5);
+  public void Close () {
+    gameObject.SetActive(false);
+    FPSControls.Instance.enabled = true;
   }
 }

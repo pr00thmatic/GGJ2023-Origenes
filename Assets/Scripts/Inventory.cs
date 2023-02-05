@@ -5,6 +5,8 @@ using System.Collections.Generic;
 public class Inventory : Singleton<Inventory> {
   public const int CI_INDEX = 0;
   public const int FICHA_INDEX = 1;
+  public const int PAPER_INDEX = 3;
+  public const int COFFEE_INDEX = 3;
 
   [Header("Configuration")]
   public bool isVisible = false;
@@ -28,7 +30,7 @@ public class Inventory : Singleton<Inventory> {
       SetVisibility(!isVisible);
     }
     if (Input.GetMouseButtonDown(1)) {
-      rotationPivot.rotation = Quaternion.identity;
+      rotationPivot.localRotation = Quaternion.identity;
       Unhold();
     }
     if (Input.GetMouseButton(2)) {
