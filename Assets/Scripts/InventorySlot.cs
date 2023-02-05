@@ -3,8 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class InventorySlot : MonoBehaviour {
-  public static event System.Action<int> onHoldRequest;
-
   [Header("Configuration")]
   public bool available = true;
   public bool Visible { get => Inventory.Instance.isVisible; }
@@ -22,6 +20,6 @@ public class InventorySlot : MonoBehaviour {
   }
 
   public void HoldTheItem () {
-    onHoldRequest?.Invoke(this.transform.GetSiblingIndex());
+    Inventory.Instance.Hold(this.transform.GetSiblingIndex());
   }
 }

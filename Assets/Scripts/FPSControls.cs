@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class FPSControls : MonoBehaviour {
+public class FPSControls : Singleton<FPSControls> {
   [Header("Configuration")]
   public float speed;
   public Vector2 xRotationRange = new Vector2(-60, 50);
@@ -17,6 +17,7 @@ public class FPSControls : MonoBehaviour {
 
   void OnEnable () {
     SetCursorLock(true);
+    Inventory.Instance.enabled = true;
   }
 
   void Update () {

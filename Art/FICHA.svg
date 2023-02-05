@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="193.79062mm"
+   height="111.22449mm"
+   viewBox="0 0 193.79062 111.22449"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="FICHA.svg"
+   inkscape:export-filename="../Assets/Sprites/ficha.png"
+   inkscape:export-xdpi="96.095398"
+   inkscape:export-ydpi="96.095398"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.2151235"
+     inkscape:cx="332.47651"
+     inkscape:cy="160.47752"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient15479">
+      <stop
+         style="stop-color:#cccccc;stop-opacity:1"
+         offset="0"
+         id="stop15475" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="1"
+         id="stop15477" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient15479"
+       id="linearGradient15481"
+       x1="195.27132"
+       y1="194.4052"
+       x2="557.96875"
+       y2="282.27539"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.41457563,0,0,0.41457563,-13.578111,-62.459488)" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-23.951509,1.0472353)">
+    <path
+       id="rect846"
+       style="fill:url(#linearGradient15481);fill-opacity:1;stroke-width:1.45722;stroke-dashoffset:4.42091;paint-order:stroke markers fill"
+       d="m 23.951509,-1.0472353 v 6.4664097 c 0.183034,-0.03839 0.367883,-0.067601 0.553847,-0.087451 3.082077,-2.08e-5 5.5806,2.4985022 5.580579,5.5805776 2.1e-5,3.082076 -2.498502,5.580599 -5.580579,5.580578 -0.185964,-0.01986 -0.370813,-0.04904 -0.553847,-0.08745 v 8.119854 c 0.183034,-0.03839 0.367883,-0.0676 0.553847,-0.08745 3.082077,-2e-5 5.5806,2.498502 5.580579,5.580578 1.6e-5,3.082075 -2.498504,5.580594 -5.580579,5.580573 -0.185964,-0.01986 -0.370813,-0.04904 -0.553847,-0.08745 v 8.631593 c 0.183034,-0.03843 0.367883,-0.0676 0.553847,-0.08745 3.082077,-2e-5 5.5806,2.498503 5.580579,5.580578 2.1e-5,3.082076 -2.498502,5.580598 -5.580579,5.580578 -0.185964,-0.01986 -0.370813,-0.04904 -0.553847,-0.08745 v 8.290704 c 0.183034,-0.03839 0.367883,-0.0676 0.553847,-0.08745 3.082077,-2.1e-5 5.5806,2.498502 5.580579,5.580577 1.6e-5,3.082076 -2.498504,5.580595 -5.580579,5.580574 -0.185964,-0.01986 -0.370813,-0.04904 -0.553847,-0.08745 v 13.066417 c 0.183034,-0.03839 0.367883,-0.0676 0.553847,-0.08745 3.082075,-2e-5 5.580595,2.498498 5.580579,5.580574 2.1e-5,3.082075 -2.498502,5.580598 -5.580579,5.580577 -0.185964,-0.01986 -0.370813,-0.04904 -0.553847,-0.08745 V 110.17725 H 217.74213 V -1.0472353 c -64.59687,3.9700674 -129.193748,1.594889 -193.790621,0 z"
+       sodipodi:nodetypes="cccccccccccccccccccccccccccccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:8.0077px;line-height:0.95;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#333333;stroke:none;stroke-width:1.0555;stroke-dashoffset:4.42091;paint-order:stroke markers fill"
+       x="43.976707"
+       y="33.815876"
+       id="text3900"><tspan
+         sodipodi:role="line"
+         id="tspan3898"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Courier New';-inkscape-font-specification:'Courier New Bold';fill:#333333;stroke-width:1.0555"
+         x="43.976707"
+         y="33.815876">Código:</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8.0077px;line-height:0.95;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#333333;stroke:none;stroke-width:1.0555;stroke-dashoffset:4.42091;paint-order:stroke markers fill"
+       x="43.976707"
+       y="66.910316"
+       id="text8992"><tspan
+         sodipodi:role="line"
+         id="tspan8990"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Courier New';-inkscape-font-specification:'Courier New Bold';fill:#333333;stroke-width:1.0555"
+         x="43.976707"
+         y="66.910316">Autor:</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8.0077px;line-height:0.95;font-family:Tahoma;-inkscape-font-specification:Tahoma;fill:#333333;stroke:none;stroke-width:1.0555;stroke-dashoffset:4.42091;paint-order:stroke markers fill"
+       x="121.54663"
+       y="17.268656"
+       id="text9800"><tspan
+         sodipodi:role="line"
+         id="tspan9798"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Courier New';-inkscape-font-specification:'Courier New Bold';text-align:center;text-anchor:middle;fill:#333333;stroke-width:1.0555"
+         x="121.54663"
+         y="17.268656">FICHA BIBLIOGRÁFICA</tspan></text>
+  </g>
+</svg>
