@@ -2014,6 +2014,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controls: {fileID: 147316705}
   inventory: {fileID: 1789744779}
+  intro: {fileID: 120257764}
 --- !u!1 &141504464
 GameObject:
   m_ObjectHideFlags: 0
@@ -15231,7 +15232,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1300437269, guid: f2440c739173fda469d29d56539d2394, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0ee3e0821ae07e549b559338dfba01e2, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

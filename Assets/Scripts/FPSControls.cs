@@ -21,6 +21,10 @@ public class FPSControls : Singleton<FPSControls> {
     Inventory.Instance.enabled = true;
   }
 
+  void OnDisable () {
+    steps.targetVolume = 0;
+  }
+
   void Update () {
     verticalPivot.Rotate(0, Input.GetAxis("Mouse X") * sensitivity.x, 0);
     xRotation = Mathf.Clamp(xRotation + sensitivity.y * Input.GetAxis("Mouse Y"),
