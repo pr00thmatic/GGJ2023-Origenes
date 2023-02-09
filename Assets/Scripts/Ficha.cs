@@ -16,6 +16,7 @@ public class Ficha : MonoBehaviour {
   public TextAsset lastNamesSource;
   public TextAsset hailSatan;
   public InventorySlot fichaSlot;
+  public AudioSource speaker;
 
   void Awake () {
     namesList = namesSource.ToString().Split("\n");
@@ -50,6 +51,8 @@ public class Ficha : MonoBehaviour {
   }
 
   string GimmieItem (char startsWith, string[] array) {
+    speaker.Play();
+    UnlockerTriggerer.TriggerUnlocker("ficha");
     try {
       Utils.Shuffle(namesList);
       Utils.Shuffle(lastNamesList);

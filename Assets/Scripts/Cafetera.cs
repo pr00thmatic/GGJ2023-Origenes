@@ -14,6 +14,7 @@ public class Cafetera : MonoBehaviour, IAmInteractive {
   public GameObject waterGlass;
   public GameObject coffeeGlass;
   public AudioSource sfx;
+  public AudioSource voice;
 
   void Update () {
     if (Input.GetMouseButtonDown(0) && Crosshair.Instance.selected &&
@@ -22,7 +23,8 @@ public class Cafetera : MonoBehaviour, IAmInteractive {
         stream = coffeeStream;
         Inventory.Instance.Unhold();
         Inventory.Instance.Remove(Inventory.COFFEE_INDEX);
-        PepeGrillo.Say("La cafetera está lista, ahora va a servir café en vez de solo agua caliente.");
+        PepeGrillo.Say("La cafetera está lista, ahora sí va a servir café en vez de solo agua caliente.");
+        voice.Play();
       } else {
         sfx.PlayOneShot(sfx.clip);
         stream.Play();

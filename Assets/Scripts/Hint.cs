@@ -4,7 +4,8 @@ using System.Collections.Generic;
 
 [System.Serializable]
 public class Hint {
-  string unlocker;
-  string clue;
-  float timeToShow;
+  public AudioClip voice;
+  public string unlocker;
+  public string clue;
+  public float timeToShow;
 }

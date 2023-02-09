@@ -31,6 +31,9 @@ public class FrikingBook : MonoBehaviour {
       content.SetActive(false);
       coffeePile.SetActive(true);
       coffeePile.transform.parent = null;
+      UnlockerTriggerer.TriggerUnlocker("iCantHoldAllThisPowder");
+    } else {
+      UnlockerTriggerer.TriggerUnlocker("cluelessInitials");
     }
     yield return new WaitForSeconds(2);
 

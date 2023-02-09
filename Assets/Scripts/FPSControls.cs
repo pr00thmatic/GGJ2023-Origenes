@@ -35,7 +35,7 @@ public class FPSControls : Singleton<FPSControls> {
                                Input.GetAxis("Vertical") * verticalPivot.transform.forward);
     transform.position += motionDirection * speed * Time.deltaTime;
 
-    steps.targetVolume = motionDirection.magnitude < 0.1f? 0: 1;
+    steps.targetVolume = motionDirection.magnitude < 0.1f? 0: 0.4f;
   }
 
   public void SetCursorLock (bool value) {

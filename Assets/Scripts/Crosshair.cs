@@ -19,6 +19,14 @@ public class Crosshair : Singleton<Crosshair> {
   public Animator animator;
   public Animator tutorialAnimator;
 
+  void OnEnable () {
+    tutorialAnimator.gameObject.SetActive(true);
+  }
+
+  void OnDisable () {
+    tutorialAnimator.gameObject.SetActive(false);
+  }
+
   void Update () {
     if (Inventory.Instance.CurrentlyHeld) elapsedHoldingAnItem += Time.deltaTime;
 
