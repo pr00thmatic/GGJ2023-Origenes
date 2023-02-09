@@ -24,7 +24,12 @@ public class Acquire : MonoBehaviour, IAmInteractive {
       if (!unnacquirable && Inventory.Instance.CurrentlyHeld == needsToBeGrabbable) {
         AcquireSelf();
       } else {
-        PepeGrillo.Say(errorMessage);
+        if (errorMessage == "" && !needsToBeGrabbable) {
+          PepeGrillo.Say("No puedo usar esto. Mejor lo guardo");
+          Inventory.Instance.Unhold();
+        } else {
+          PepeGrillo.Say(errorMessage);
+        }
       }
     }
   }

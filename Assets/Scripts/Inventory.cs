@@ -18,6 +18,7 @@ public class Inventory : Singleton<Inventory> {
     get => heldIndex < 0? null:
       heldItemsParent.GetChild(heldIndex).GetComponent<Animator>();
   }
+  public float rightClickTimestamp = -100;
 
   [Header("Initialization")]
   public Transform rotationPivot;
@@ -30,13 +31,17 @@ public class Inventory : Singleton<Inventory> {
       SetVisibility(!isVisible);
     }
     if (Input.GetMouseButtonDown(1)) {
-      rotationPivot.localRotation = Quaternion.identity;
-      Unhold();
+      rightClickTimestamp = Time.time;
     }
-    if (Input.GetMouseButton(2)) {
+    if (Input.GetMouseButton(1)) {
       Inspect();
     }
-    if (Input.GetMouseButtonUp(2)) {
+    if (Input.GetMouseButtonUp(1)) {
+      if (Time.time - rightClickTimestamp < 0.25f) {
+        Unhold();
+      } else if (Time.time - rightClickTimestamp > 1) {
+        Crosshair.Instance.elapsedHoldingAnItem = 100;
+      }
       FPSControls.Instance.enabled = true;
     }
   }
@@ -72,6 +77,7 @@ public class Inventory : Singleton<Inventory> {
 
   public void Unhold () {
     if (heldIndex < 0) return;
+    rotationPivot.localRotation = Quaternion.identity;
     CurrentlyHeld.SetBool("being held", false);
     heldIndex = -1;
   }

@@ -17,6 +17,7 @@ public class Biblioteca : MonoBehaviour, IAmInteractive {
   public TheBook theBook;
 
   void Awake () {
+    blockShelf = false;
     booksList = rawBooks.ToString().Split("\n");
   }
 
