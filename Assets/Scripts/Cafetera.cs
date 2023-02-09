@@ -18,15 +18,16 @@ public class Cafetera : MonoBehaviour, IAmInteractive {
   void Update () {
     if (Input.GetMouseButtonDown(0) && Crosshair.Instance.selected &&
         Crosshair.Instance.selected.GetComponentInParent<Cafetera>() == this) {
-      if (!Inventory.Instance.CurrentlyHeld) {
+      if (Inventory.Instance.CurrentlyHeld && Inventory.Instance.CurrentlyHeld.GetComponentInParent<HeldCoffee>()) {
+        stream = coffeeStream;
+        Inventory.Instance.Unhold();
+        Inventory.Instance.Remove(Inventory.COFFEE_INDEX);
+        PepeGrillo.Say("La cafetera está lista, ahora va a servir café en vez de solo agua caliente.");
+      } else {
         sfx.PlayOneShot(sfx.clip);
         stream.Play();
         (waterStream == stream? waterGlass: coffeeGlass).SetActive(true);
         if (stream == coffeeGlass) this.enabled = false;
-      } else if (Inventory.Instance.CurrentlyHeld.GetComponentInParent<HeldCoffee>()) {
-        stream = coffeeStream;
-        Inventory.Instance.Unhold();
-        Inventory.Instance.Remove(Inventory.COFFEE_INDEX);
       }
     }
   }
