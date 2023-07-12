@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg15190"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="readingRoom.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview15192"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.5946522"
+     inkscape:cx="2314.7985"
+     inkscape:cy="2572.9325"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs15187" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="opacity:0.684636;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.353552;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke markers fill"
+       d="m 634.62488,640.26528 c -32.16476,0.0127 -64.32952,0.0393 -96.49428,0.0599 0.46855,2.63938 1.41165,5.37316 2.06263,8.04881 9.10032,33.73673 18.12312,67.50486 27.28836,101.21754 4.70683,0.31792 9.46245,0.13039 14.18733,0.20574 23.46428,0.0185 46.92856,-0.0353 70.39282,-0.0537 1.93125,-7.72866 3.62307,-15.60864 5.46224,-23.39549 6.59284,-28.65091 13.26722,-57.28369 19.75565,-85.9582 -1.82701,-0.25718 -3.87107,-0.0322 -5.77491,-0.11531 -12.29328,-0.0143 -24.58656,-0.0119 -36.87984,-0.009 z"
+       id="path14289" />
+    <rect
+       style="opacity:0.684636;fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke markers fill"
+       id="rect16833"
+       width="40"
+       height="20"
+       x="589.99994"
+       y="630" />
+  </g>
+</svg>
