@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg613"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="outer door.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview615"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.6819304"
+     inkscape:cx="2330.9526"
+     inkscape:cy="2830.676"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs610" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="opacity:0.684636;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke markers fill"
+       d="m 580.18981,710.24199 c 0.0534,13.14987 -0.1062,26.38803 0.0797,39.48305 19.74988,-0.0532 39.58784,0.10621 59.28281,-0.0796 -0.0534,-13.14987 0.1062,-26.38803 -0.0796,-39.48305 -19.74977,0.0532 -39.58804,-0.1061 -59.28283,0.0796 z"
+       id="path527" />
+    <rect
+       style="opacity:0.684636;fill:#ffffff;fill-opacity:1;stroke:#2bff00;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       id="rect9865-1"
+       width="10"
+       height="20"
+       x="-735"
+       y="570"
+       rx="1.1368684e-13"
+       ry="1.1368684e-13"
+       transform="rotate(-90)" />
+    <rect
+       style="opacity:0.684636;fill:#ffffff;fill-opacity:1;stroke:#ff0000;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       id="rect17243"
+       width="40"
+       height="20"
+       x="589.99994"
+       y="699.99994"
+       rx="1.1368684e-13"
+       ry="1.1368684e-13" />
+  </g>
+</svg>
